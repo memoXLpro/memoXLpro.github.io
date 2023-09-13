@@ -1,54 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <script>
-
-      function getTime() {
-        var dt = new Date();
-        var h = dt.getHours();
-        var m = dt.getMinutes();
-
-        var clock = prettyTime(h) + ":" + prettyTime(m);
-        return clock;
-      }
-
-      function setClock() {
-        var clock = getTime();
-        document.getElementById("clock_footer").innerHTML = clock;
-        var sleepTime = setTimeout(setClock, 500);
-
-      }
-
-      function prettyTime(x) {
-        if(x < 10)
-        {
-          return "0" + x;
-        }
-        else{
-          return x;
-        }
-      }
-    </script>
     <link rel="stylesheet" type="text/css" href="Color.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Funny site</title>
     <meta name="author" content="Mehmet Aşıroğlu" />
     <meta name="description" content="Just a website for fun." />
   </head>
-    <div class="footer">
-      <p id = "clock_footer">This is the footer</p>
-    </div>
   <body onload="setClock()">
     <div class="nav">
       <a href="About me.html">About me</a>
       <a href="video.html">Videos</a>
     </div>
+<center>
   <h1>Welcome to my website</h1>
   <p>Hello and welcome. My name is Mehmet but you can call me memoXLpro.</p>
-  <img src="images/ata.png" id="MyPhoto" alt="Moon view" width="350px" height="330px"
+  <img src="images/ata.png" id="MyPhoto" alt="Moon view" width="600px" height="500px"
   <img src="images/ataoyuncak2.png" id="ataoyuncak2" alt="ATA" width="1px" height="1px"
   <br> </br>
   <button type="button" onclick="document.getElementById('MyPhoto').src = 'images/ataoyuncak2.png'">Change the photo!</button>
   <button type="button" onclick="window.location.reload(true)">Back to the other photo!</button>
   </body>
 <html>
+</center>
